@@ -1053,6 +1053,13 @@ footer .links a:hover { color: var(--amber-text); }
 /* review strip stays ink so the tooling reads as tooling */
 .strip { background: var(--navy); }
 @media (max-width: 639px) { .f-h1 { font-size: clamp(30px, 8.8vw, 38px); } .hdr .wrap { min-height: 0; } }
+/* hero copy and chart legend were set in light-on-dark colours: ink on paper instead */
+:root { --muted: #4e5853; }
+.f-who, .f-under, .f-terms div, .f-terms dd, .f-lede { color: var(--body); }
+.f-terms dt { color: var(--navy); }
+.f-terms { border-top-color: var(--line-in); }
+.f-ch-cap, .f-badge { color: var(--muted); }
+.f-chartcard .chart-txt { color: var(--body); } .f-chartcard .chart-txt .mono { color: var(--navy); }
 </style>
 </head>
 <body>
