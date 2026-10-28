@@ -908,6 +908,25 @@ h1[tabindex="-1"]:focus-visible { outline: 2px solid var(--amber); outline-offse
 
 .rec-more { min-width: 72px; min-height: 44px; padding: 0 10px; }
 @media (max-width: 639px) { .tbl-box.cards .rec-more { display: inline-flex; width: 100%; justify-content: center; border: 1.5px solid var(--navy); border-radius: 8px; text-decoration: none; margin-top: 6px; } }
+
+/* hero background: dot grid with a pointer spotlight (brewedops backgrounds-dot-spotlight), recoloured for the forest ground; no line grid */
+.f-hero { --x: 62%; --y: 40%; }
+.f-dots, .f-lit, .f-glow { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+.f-dots { background-image: radial-gradient(circle, rgba(255,255,255,.16) 1.2px, transparent 1.8px); background-size: 18px 18px; mask-image: radial-gradient(ellipse at 50% 50%, #000 40%, transparent 85%); -webkit-mask-image: radial-gradient(ellipse at 50% 50%, #000 40%, transparent 85%); }
+.f-lit { background-image: radial-gradient(circle, #edc78e 1.6px, transparent 2.2px); background-size: 18px 18px; -webkit-mask-image: radial-gradient(circle 110px at var(--x) var(--y), #000, transparent); mask-image: radial-gradient(circle 110px at var(--x) var(--y), #000, transparent); }
+.f-glow { background: radial-gradient(circle 220px at var(--x) var(--y), rgba(201,136,27,.22), transparent 70%); transition: background .2s; }
+.f-hero .wrap { position: relative; z-index: 1; }
+/* chart card centred on the headline block instead of hanging into the next section */
+@media (min-width: 1024px) {
+  .f-hero { padding-bottom: 88px; }
+  .f-hero::before { bottom: 0; }
+  .f-hero .f-msg { padding-bottom: 0; }
+  .f-hero .f-right { align-self: center; margin-bottom: 0; }
+  .f-hero .f-cols { align-items: center; }
+  #record-home.f-sec { margin-top: 0; padding-top: 96px; }
+}
+@media (max-width: 639px) { .f-lit, .f-glow { display: none; } }
+@media (prefers-reduced-motion: reduce) { .f-lit, .f-glow { display: none; } }
 </style>
 </head>
 <body>
@@ -1039,7 +1058,7 @@ h1[tabindex="-1"]:focus-visible { outline: 2px solid var(--amber); outline-offse
     var hc = heroChart(HERO, 640, 300);
     return header("#") + '<div class="f-progress" aria-hidden="true"><i id="fProg"></i></div><main class="fable">' +
     /* L0 */
-    '<section class="f-hero" data-l="L0" data-note="the message and who it’s for · one button only"><div class="f-grid" aria-hidden="true"></div><div class="f-light" aria-hidden="true"></div><div class="wrap"><div class="f-cols">' +
+    '<section class="f-hero" data-l="L0" data-note="the message and who it’s for · one button only"><i class="f-dots" aria-hidden="true"></i><i class="f-lit" aria-hidden="true"></i><i class="f-glow" aria-hidden="true"></i><div class="wrap"><div class="f-cols">' +
       '<div class="f-msg"><p class="caps f-caps rv">For self-directed investors with large positions in individual stocks</p>' +
       '<h1 class="f-h1">' + "Your biggest position can drop 10% before you look up.".split(" ").map(function (w, i) { return '<span class="w" style="--i:' + i + '"><span>' + w + '</span></span>'; }).join(" ") + '</h1>' +
       '<p class="f-lede rv" style="--d:.5s">Alpha Sentinel watches the stocks you hold. When one turns down, you get a text: where to consider selling, how far it could fall, and where we’re wrong.</p>' +
@@ -1627,7 +1646,7 @@ h1[tabindex="-1"]:focus-visible { outline: 2px solid var(--amber); outline-offse
   homepage = function () {
     var hc = heroChart(HERO, 640, 300);
     return header("#") + '<div class="f-progress" aria-hidden="true"><i id="fProg"></i></div><main class="fable">' +
-    '<section class="f-hero" data-l="L0"><div class="f-grid" aria-hidden="true"></div><div class="f-light" aria-hidden="true"></div><div class="wrap"><div class="f-cols">' +
+    '<section class="f-hero" data-l="L0"><i class="f-dots" aria-hidden="true"></i><i class="f-lit" aria-hidden="true"></i><i class="f-glow" aria-hidden="true"></i><div class="wrap"><div class="f-cols">' +
       '<div class="f-msg"><p class="caps f-caps rv">Early-warning alerts for the stocks you choose.</p>' +
       '<h1 class="f-h1">' + "Stock alerts that explain what changed.".split(" ").map(function (w, i) { return '<span class="w" style="--i:' + i + '"><span>' + w + '</span></span>'; }).join(" ") + '</h1>' +
       '<p class="f-lede rv" style="--d:.5s">Alpha Sentinel watches the stocks you choose. When its rules detect conditions turning down, you receive an alert with price levels to consider. You decide whether to act.</p>' +
@@ -1961,6 +1980,8 @@ h1[tabindex="-1"]:focus-visible { outline: 2px solid var(--amber); outline-offse
     var rs = $("#resetDemo"); if (rs) rs.addEventListener("click", function () { try { sessionStorage.removeItem("as-cc-mobile"); } catch (e) {} location.hash = ""; location.reload(); });
   })();
 
+  /* hero spotlight follows the pointer (document-level so it survives re-renders) */
+  document.addEventListener("pointermove", function (e) { var h = document.querySelector(".f-hero"); if (!h) return; var r = h.getBoundingClientRect(); if (e.clientY < r.top || e.clientY > r.bottom) return; h.style.setProperty("--x", (e.clientX - r.left) + "px"); h.style.setProperty("--y", (e.clientY - r.top) + "px"); }, { passive: true });
   /* ---------- router ---------- */
   var root = $("#root"), cur = null, PAGES = { "": [homepage, wireHomepage], start: [startPage, wireStart], checkout: [checkoutPage, wireCheckout], welcome: [welcomePage, wireWelcome], set: [setPage, wirePublic], app: [dashPage, wireDash], alerts: [alertsPage, wirePublic], channels: [channelsPage, function () { wireChannels(); wirePublic(); }], "alert-reference": [referencePage, wirePublic], "how-it-works": [howPage, wirePublic], record: [recordPage, function () { wireRecord(); wirePublic(); }], pricing: [pricingPage, wirePublic], faq: [faqPage, function () { wireFaq(); wirePublic(); }] };
   function render() {
