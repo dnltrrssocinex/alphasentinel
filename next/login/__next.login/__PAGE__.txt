@@ -1,0 +1,39 @@
+1:"$Sreact.fragment"
+2:"/alphasentinel/next/_next/static/chunks/41yknu3a_jzpe.js"
+3:"SiteStateProvider"
+4:I[12874,["$2"],"$3"]
+5:I[20032,["$2"],"SmoothScroll"]
+6:I[39756,["$2"],"default"]
+7:I[37457,["$2"],"default"]
+8:I[18433,["$2"],"ReviewMarkers"]
+f:"/alphasentinel/next/_next/static/chunks/2qa_mapck8qun.js"
+10:I[2971,["$2","$f"],"Header"]
+11:I[22016,["$2","$f"],""]
+18:"ViewportBoundary"
+19:I[97367,["$2"],"$18"]
+1a:"MetadataBoundary"
+1b:I[97367,["$2"],"$1a"]
+1c:"$Sreact.suspense"
+1d:I[27201,["$2"],"IconMark"]
+:HL["/alphasentinel/next/_next/static/chunks/1a-pqmpc4tdsl.css","style"]
+a:X
+d:X
+d:C
+e:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","$L10",null,{}],["$","main",null,{"className":"bg-page","children":["$","div",null,{"className":"wrap py-16 lg:py-24","children":["$","div",null,{"className":"card mx-auto max-w-[640px] p-8","children":[["$","p",null,{"className":"label label-dash mb-4","children":"Next preview"}],["$","h1",null,{"className":"h1-page","children":"Log in"}],["$","p",null,{"className":"mt-4 text-body","children":"Check your email for a sign-in link."}],["$","p",null,{"className":"mt-2 text-small text-muted","children":"Email field → magic link (A6)."}],["$","p",null,{"className":"mt-4","children":["$","span",null,{"className":"placeholder","children":"[COPY FROM CANVAS / COPY DECK v8]"}]}],["$","p",null,{"className":"mt-6","children":["$","$L11",null,{"href":"/","className":"btn btn-outline","children":"Back to the homepage"}]}]]}]}]}],["$","footer",null,{"className":"border-t border-line bg-page","children":["$","div",null,{"className":"wrap py-12","children":[["$","a",null,{"href":"#","aria-label":"Alpha Sentinel home","className":"inline-flex items-center gap-3 no-underline","children":[["$","svg",null,{"viewBox":"0 0 48 48","width":28,"height":28,"aria-hidden":"true","className":"shrink-0 text-ink","children":[["$","circle",null,{"cx":"24","cy":"24","r":"16","fill":"none","stroke":"currentColor","strokeWidth":"5"}],["$","circle",null,{"cx":"35.3","cy":"12.7","r":"6.5","fill":"#A84B07","stroke":"var(--color-white)","strokeWidth":"3"}]]}],["$","span",null,{"className":"flex flex-col leading-tight","children":[["$","b",null,{"className":"font-mono text-[13.5px] font-bold uppercase tracking-[0.18em] text-ink","children":"Alpha Sentinel"}],["$","small",null,{"className":"text-[11px] text-muted","children":"Early-warning alerts for the stocks you choose."}]]}]]}],["$","p",null,{"className":"mt-6 max-w-[80ch] text-[13.5px] leading-relaxed text-muted","children":["Alpha Sentinel is published by True North 8116 LLC, 174 Nassau St, Princeton, NJ. Alpha Sentinel is a financial publisher, not an investment adviser or broker-dealer. Alerts are published to every member who holds that stock, at the same time, and are not personal advice. Alpha Sentinel does not prevent losses; alerts can be wrong, late or missed."," ",["$","span",null,{"className":"placeholder","children":"[COUNSEL]"}]]}],["$","nav",null,{"aria-label":"Legal","className":"mt-6 flex flex-wrap gap-x-6 gap-y-3","children":[["$","$L11","Terms",{"href":"/legal/","className":"nav-link min-h-11 text-[13px] font-medium tracking-[0.08em]","children":"Terms"}],"$L12","$L13","$L14"]}]]}]}]],["$L15"],"$L16"]}],"p":"$@17","v":null,"s":"$a"}}]]
+b:[["children",{"s":"login","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}]}]]}],"p":"$@c","v":"$d","s":"$a"},"c":"$Qe"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/alphasentinel/next/_next/static/chunks/1a-pqmpc4tdsl.css","precedence":"next"}],["$","script","script-0",{"src":"/alphasentinel/next/_next/static/chunks/41yknu3a_jzpe.js","async":true}]],["$","html",null,{"lang":"en","className":"light Ow2VXW_variable BB9boG_variable h-full","children":["$","body",null,{"className":"min-h-full flex flex-col","children":["$","$L4",null,{"children":["$","$L5",null,{"children":[["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}],["$","$L8",null,{}]]}]}]}]}]]}],"p":"$@9","v":null,"s":"$a"},"c":"$Qb"},"h":{"r":["$","$1","h",{"children":[null,["$","$L19",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1b",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1c",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Log in · Alpha Sentinel"}],["$","meta","1",{"name":"description","content":"Alpha Sentinel watches the stocks you hold. When one turns down, you get a text: where to consider selling, how far it could fall, and where we’re wrong."}],["$","link","2",{"rel":"icon","href":"/alphasentinel/next/icon.svg?icon.00qganzx4xl3p.svg","sizes":"any","type":"image/svg+xml"}],["$","$L1d","3",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1e","v":null,"s":"$a"}},"a":"$@1f","u":"$@20","b":"uJxjKAS5LZaN0xb2_vzMp"}
+21:I[97367,["$2"],"OutletBoundary"]
+12:["$","$L11","Privacy",{"href":"/legal/","className":"nav-link min-h-11 text-[13px] font-medium tracking-[0.08em]","children":"Privacy"}]
+13:["$","$L11","Disclosures",{"href":"/legal/","className":"nav-link min-h-11 text-[13px] font-medium tracking-[0.08em]","children":"Disclosures"}]
+14:["$","a","Contact",{"href":"mailto:support@alphasentinel.ai","className":"nav-link min-h-11 text-[13px] font-medium tracking-[0.08em]","children":"Contact"}]
+15:["$","script","script-0",{"src":"/alphasentinel/next/_next/static/chunks/2qa_mapck8qun.js","async":true}]
+16:["$","$L21",null,{"children":["$","$1c",null,{"name":"Next.MetadataOutlet","children":"$@22"}]}]
+a:300
+22:null
+20:true
+a:C
+1f:0
+c:"$undefined"
+9:"$undefined"
+1e:"$undefined"
+17:"$undefined"
