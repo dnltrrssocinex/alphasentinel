@@ -7,3 +7,5 @@ Publish with GitHub Pages: Settings → Pages → Source "Deploy from a branch" 
 
 Second page: `app-brand.html` is `builds/clear-communication-app-brand.html` — the same preview in the member app's own look
 (parchment ground, mono labels, chip pills). Open it at `/alphasentinel/app-brand.html`.
+
+Third page: `next/` is the Next.js presentation build of the canvas homepage (`site-next/`, built with `PAGES_BASE_PATH=/alphasentinel/next`). Open it at `/alphasentinel/next/`.
