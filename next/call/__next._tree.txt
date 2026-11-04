@@ -5,4 +5,4 @@
 :HL["/alphasentinel/next/_next/static/media/d6c1ff7e86974212-s.p.40sczeszzbjw1.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"call","h":96,"c":"$Q2"}]]
-0:{"b":"uJxjKAS5LZaN0xb2_vzMp","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"3L48522CZatcC0QabRCL1","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
